@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="./imgs/icon.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="mark.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="page-inner-wrapper">
+                <div id="codePage" class="page">
+                    <div class="header">Ken uw bruidegom</div>
+                    <div class="task">Voer code in:</div>
+                    <div class="code-input-container">
+                        <div class="code-input-item-wrapper">
+                            <div class="number">1</div>
+                            <input id="codeChar0" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(0)">
+                            <input id="codeChar1" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(1)">
+                        </div><br><br>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">2</div>
+                            <input id="codeChar2" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(2)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">3</div>
+                            <input id="codeChar3" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(3)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">4</div>
+                            <input id="codeChar4" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(4)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">5</div>
+                            <input id="codeChar5" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(5)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">6</div>
+                            <input id="codeChar6" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(6)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">7</div>
+                            <input id="codeChar7" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(7)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">8</div>
+                            <input id="codeChar8" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(8)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">9</div>
+                            <input id="codeChar9" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(9)">
+                        </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">10</div>
+                            <input id="codeChar10" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(10)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">11</div>
+                                <input id="codeChar11" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(11)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">12</div>
+                                <input id="codeChar12" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(12)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">13</div>
+                                <input id="codeChar13" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(13)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">14</div>
+                                <input id="codeChar14" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(14)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">15</div>
+                                <input id="codeChar15" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(15)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">16</div>
+                                <input id="codeChar16" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(16)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">17</div>
+                                <input id="codeChar17" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(17)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">18</div>
+                                <input id="codeChar18" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(18)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">19</div>
+                                <input id="codeChar19" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(19)">
+                                <input id="codeChar20" type="text" maxlength="1" class="code-input-item" onkeyup="moveToNextInput(20)">
+                            </div>
+                        <div class="code-input-item-wrapper">
+                            <div class="number">20</div>
+                                <input id="codeChar21" type="text" maxlength="1" class="code-input-item">
+                            </div>
+                    </div>
+                    <!-- <img class="drawing" src="./imgs/drawing.png"> -->
+                    <div class="are-you-sure">Weet je het zeker?</div>
+                    <button class="submit-button" onclick="submitCode('mark', 'jonneke')">Ik ken mijn man!</button>
+                </div>
+                <div id="answerPage" class="page answerPage">
+                    <div class="answer-message">U kent uw bruidegom</div>
+                    <div>Ga naar</div>
+                    <div id="answer" class="answer"></div>
+                </div>
+            </div>
+        </div>
+        <div id="error" class="error">FOUT</div>
+    </body>
+</html>
