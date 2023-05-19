@@ -4,7 +4,7 @@ function displayLocation(locationKey) {
     fetch('./locations.json').then((response) => response.json())
     .then((json) => {
         console.log('JSON:', json);
-        document.getElementById(locationKey).innerHTML = json[locationKey];
+        document.getElementById('answer').innerHTML = json[locationKey];
     });
 
     // const locations = {
