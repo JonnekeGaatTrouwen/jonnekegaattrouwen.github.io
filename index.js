@@ -31,13 +31,14 @@ function submitCode(page, nextLocation) {
     let submittedCode = '';
 
     for (let i = 0; i < key.length; i++) {
-        submittedCode += document.getElementById(`codeChar${i}`).value.toLowerCase();
+        const currentChar = document.getElementById(`codeChar${i}`).value.toLowerCase();
+        submittedCode += currentChar;
         console.log("Vraag", i, "- Correct answer:", key[i], "- Answer given: ", document.getElementById(`codeChar${i}`).value);
 
         document.getElementById(`codeChar${i}`).style.borderColor = 'black';
         document.getElementById(`codeChar${i}`).style.backgroundColor = 'white';
 
-        if (document.getElementById(`codeChar${i}`).value !== key[i]) {
+        if (currentChar !== key[i]) {
             wrongAnswerIndices.push(i);
         }
     }
