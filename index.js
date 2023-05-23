@@ -21,7 +21,7 @@ function displayLocation(locationKey) {
 const puzzleKeys = {
     'mark': '80bccbeacaacb2bccda43b',
     'jonneke': 'ksnlebjmiyhawcebliyahnjmsckw',
-    'kind': 'ksnlebjmiyhawc'
+    'kind': 'zgijethwkrjaml'
 }
 
 function submitCode(page, nextLocation) {
